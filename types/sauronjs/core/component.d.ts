@@ -7,6 +7,10 @@ interface ComponentParameters {
 }
 
 declare class Component {
+    broadcastSubject: any;
+    element: HTMLElement;
+    state?: any;
+
     constructor(params: ComponentParameters);
 
     static _index: number;
